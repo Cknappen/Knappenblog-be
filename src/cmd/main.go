@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
-	"github.com/Cknappen/Knappenblog-be/pkg/api"
-	"github.com/Cknappen/Knappenblog-be/pkg/auth"
+	"github.com/Cknappen/Knappenblog-be/src/pkg/api"
+	"github.com/Cknappen/Knappenblog-be/src/pkg/auth"
 	"github.com/gofiber/fiber/v2"
 )
 

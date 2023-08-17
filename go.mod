@@ -1,11 +1,14 @@
-module Knappenblog-be
+module github.com/Cknappen/Knappenblog-be
 
 go 1.20
 
 require (
+	github.com/gofiber/fiber/v2 v2.48.0
+	github.com/golang-jwt/jwt/v4 v4.5.0
+)
+
+require (
 	github.com/andybalholm/brotli v1.0.5 // indirect
-	github.com/gofiber/fiber/v2 v2.48.0 // indirect
-	github.com/golang-jwt/jwt/v4 v4.5.0 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/klauspost/compress v1.16.7 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
