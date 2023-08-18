@@ -32,4 +32,10 @@ func CreateTodo(c *fiber.Ctx) error {
 	return c.JSON(newTodo)
 }
 
+func SetupTodoRoutes(group fiber.Router) {
+	group.Get("/", GetAllTodos)
+	group.Post("/", CreateTodo)
+	// Add similar routes for updating and deleting todos.
+}
+
 // Similarly, implement functions for updating and deleting todos.
