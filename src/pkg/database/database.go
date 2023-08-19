@@ -5,7 +5,6 @@ import (
 	"log"
 	"os"
 
-	"github.com/Cknappen/Knappenblog-be/src/pkg/api/user"
 	"github.com/gofiber/fiber/v2"
 	"github.com/joho/godotenv"
 	"gorm.io/driver/postgres"
@@ -53,9 +52,6 @@ func InitDB() *gorm.DB {
 	}
 
 	DB = db
-
-	// Migrate the User struct to create the corresponding table in the database
-	DB.AutoMigrate(&user.User{})
 
 	return DB
 }
