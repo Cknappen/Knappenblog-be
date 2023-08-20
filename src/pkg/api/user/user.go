@@ -68,8 +68,8 @@ func CreateUser(c *fiber.Ctx) error {
 
 func SetupUserRoutes(db *gorm.DB, group fiber.Router) {
 	group.Get("/", GetAllUsers)
-	group.Get("/", GetUserById)
-	group.Get("/", GetUserByName)
+	group.Get("/Id", GetUserById)
+	group.Get("/Name", GetUserByName)
 	group.Post("/", CreateUser)
 	// Add similar routes for updating and deleting todos.
 }
